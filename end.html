@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Курсы</title>
+</head>
+<body>
+    <header>
+        <img class="img" src="img/ПроСтарт.png" alt="">
+        <div>
+        <a href="article.html" class="shrink-link">Главная</a>
+        <a href="article.html#part2" class="shrink-link">Каталог курсов</a>
+        <a href="article.html#part1" class="shrink-link">Карта сайта</a>
+        </div>
+        <button id="userNameDisplay" onclick="showList()" style="position: absolute; top: 20px; right: 30px; color: white; background-color: #001aff; padding: 10px; border-radius: 5px; display: none;">Имя: <span id="displayedName"></span></button>
+    </header>
+    <section class="section">
+        <div class="sec">
+            <img src="img/left-arrow.png" alt="Назад">
+            <a class="conten" href="script.html">К теории</a>
+        </div>
+        <h3 class="span">Практика</h3>
+        <p class="text" style="font-size: 20px;">Создайте файл c приложении Visual studio code с расширешие .js</p>
+        <img class="tx" src="img/screen.png" alt="#">
+        <p class="tx">Таким же образом создайте файлы с расширением .css и .html</p>
+        <div class="Language gu" style="height: 630px;">
+            <div id="text-to-copy">
+                <p class="text-to-copy">// Получение элементов DOM</p>
+                <p class="text-to-copy">const openFormButton = document.getElementById('openFormButton');</p>
+                <p class="text-to-copy">const modal = document.getElementById('modal');</p>
+                <p class="text-to-copy">const closeButton = document.querySelector('.close-button');</p>
+                <p class="text-to-copy">const registrationForm = document.getElementById('registrationForm');</p>
+                <p class="text-to-copy">// Открытие модального окна</p>
+                <p class="text-to-copy">openFormButton.addEventListener('click', () => {</p>
+                <p class="text-to-copy to">modal.style.display = 'block';</p>
+                <p class="text-to-copy">});</p>
+                <p class="text-to-copy">// Закрытие модального окна при клике на крестик</p>
+                <p class="text-to-copy">closeButton.addEventListener('click', () => {</p>
+                <p class="text-to-copy to">modal.style.display = 'none';</p>
+                <p class="text-to-copy">});</p>
+                <p class="text-to-copy">// Закрытие модального окна при клике вне его области</p>
+                <p class="text-to-copy">window.onclick = function(event) {</p>
+                <p class="text-to-copy to">if (event.target == modal) {</p>
+                <p class="text-to-copy too">modal.style.display = 'none';</p>
+                <p class="text-to-copy to">}</p>
+                <p class="text-to-copy">};</p>
+                <p class="text-to-copy">// Отправка формы</p>
+                <p class="text-to-copy">registrationForm.addEventListener('submit', function(event) {</p>
+                <p class="text-to-copy to">event.preventDefault(); // Предотвращаем перезагрузку страницы</p>
+                <p class="text-to-copy to"> // Здесь можно добавить обработку данных формы перед отправкой</p> 
+                <p class="text-to-copy to">// Уведомление об успешной отправке</p>
+                <p class="text-to-copy to">alert('Форма успешно отправлена!');</p>
+                <p class="text-to-copy to">// Сбрасываем форму</p>
+                <p class="text-to-copy to">registrationForm.reset();</p>
+                <p class="text-to-copy to">// Закрываем модальное окно</p>
+                <p class="text-to-copy to">modal.style.display = 'none';</p>
+                <p class="text-to-copy">});</p>
+           </div>
+        </div>
+        <p class="txt">Напишите стили для кнопки самостоятесльно. Добавьте любые эффекты при наведении .hover </p>
+        <img class="tx" src="img/screend.png" alt="#">
+        <p class="text">Так же добавьте код которые делает анимацию появления окна</p>
+        <div class="Language gee" style="height: 100px;">
+            <div id="text-to-copy">
+                       <p class="text-to-copy to"><b style="color: #3775FB; font-weight: 100;">@keyframes-open</b> <span> {</span></p>
+                        <p class="text-to-copy too"><b style="color: #11CE00; font-weight: 100;">from</b> <span> {</span><b style="color: #9C385B; font-weight: 100;"> top</b>: -300px;<b style="color: #9C385B; font-weight: 100;"> opacity</b>: 0;<span>}</span></p>
+                        <p class="text-to-copy too"><b style="color: #11CE00; font-weight: 100;">from</b> <span> {</span><b style="color: #9C385B; font-weight: 100;"> to</b>: 0;<b style="color: #9C385B; font-weight: 100;"> opacity</b>: 1;<span>}</span></p>
+                        <p class="text-to-copy to"><span>}</span></p>
+            </div>
+           <a href="#" id="copy-link" class="copy-icon is"><img src="img/copy.png" alt="Скопировать"></a>
+           <div id="overlay"></div>
+           <div id="notification" class="notification">Скопировано!</div>
+           </div>
+           <p class="txt">Пропишите стили и html код для всплювающего окна (3 input, button,  текст (&lt;p&gt;) , и заголовок первого уровня (&lt;h1&gt;))</p>
+           <img class="tx" src="img/screenf.png" alt="#">
+           <div>
+           <a href="article.html"><button class="forth-button">Завершить</button></a>
+           </div>
+    </section>
+    <footer class="footer">
+        <div class="blo">
+        <img class="im" src="img/ПроСтарт.png" alt="#">
+       <p class="pop">&copy; Информация о владельце авторских прав на контент сайта</p>
+       <a href="https://www.figma.com/design/ZmVCv0QR6Z2ymGKCv3xwvW/Записть-на-курсы_Дубынин-Гордей_П-25?node-id=1-3&t=y2VPGVhPqnR3jvyR-0" class="close">Политика конфиденциальности</a>
+       <h2 class="figma">Социальные сети</h2>
+       <a href="#"><img class="telegram" src="img/telegram.png" alt="#"></a>
+       <a href="#"><img class="wk" src="img/vk.png" alt="#"></a>
+       <h2 class="head">Контактная информация</h2>
+       <p class="padding">dubynin@gmail.com</p>
+       <h3 class="charset">ТЕЛЕФОН</h3>
+       <p class="script">+7 955 228-89-04</p>
+        </div>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>

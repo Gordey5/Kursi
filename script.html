@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Курсы</title>
+</head>
+<body>
+    <header>
+        <img class="img" src="img/ПроСтарт.png" alt="">
+        <div>
+        <a href="article.html" class="shrink-link">Главная</a>
+        <a href="article.html#part2" class="shrink-link">Каталог курсов</a>
+        <a href="article.html#part1" class="shrink-link">Карта сайта</a>
+        </div>
+        <button id="userNameDisplay" onclick="showList()" style="position: absolute; top: 20px; right: 30px; color: white; background-color: #001aff; padding: 10px; border-radius: 5px; display: none;">Имя: <span id="displayedName"></span></button>
+    </header>
+    <section class="section">
+        <div class="sec">
+            <img src="img/left-arrow.png" alt="Назад">
+            <a class="conten" href="css.html">Назад</a>
+        </div>
+       <h2 class="design">JawaScript</h2>
+       <p class="text">JavaScript (часто сокращенно как JS) — это мультипарадигменный язык программирования, который широко используется для разработки веб-приложений, игр, десктопных приложений и многого другого. JavaScript является стандартизированным языком ECMAScript и используется в различных контекстах, включая клиентские веб-браузеры (например, Chrome, Firefox, Safari), серверные среды (Node.js), мобильные платформы (например, React Native) и даже встраиваемые системы (например, Tessel).</p>
+       <div class="dew" style="margin-top: -155px;">
+        <h2 style="font-size: 25px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 100;">Навигация по курсу</h2>
+        <a class="aa" href="#ocnova">Основные понятия и синтаксис</a>
+        <a class="aa" href="#tipe">Типы данных и операции</a>
+        <a class="aa" href="#object">Объекты и прототипы</a>
+        <a class="aa" href="#code">Пример кода</a>
+        <a class="aa" href="#vide">Видео</a>
+    </div>
+    <h3 class="span" id="ocnova">Основные понятия и синтаксис</h3>
+    <ol class="txt atributi" style="margin-top: 30px;">
+        <li class="txb">1.Скриптовые файлы:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>Файлы с расширением <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">.js</b> содержат JavaScript-код. Они могут быть подключены к HTML-странице с помощью элемента &lt;<b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">script</b>&gt;.</li>
+    </ul>
+    <ol class="tx atributi">
+        <li class="txb">2.Прототипное наследование:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>JavaScript использует прототипное наследование, где каждый объект наследует свойства и методы от своего прототипа.</li>
+    </ul>
+    <ol class="tx atributi">
+        <li class="txb">3.Объекты и функции:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>В JavaScript все является объектами, включая функции. Функции могут использоваться как объекты и как первые классы.</li>
+    </ul>
+    <ol class="tx atributi">
+        <li class="txb">4.Модульность:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>Модули позволяют организовывать код в отдельные блоки, что улучшает структуру и читаемость.</li>
+    </ul>
+    <ol class="tx atributi">
+        <li class="txb">5.АрROW-функции:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>АрROW-функции упрощают создание анонимных функций и помогают улучшить читаемость кода.</li>
+    </ul>
+    <h3 class="span" id="tipe">Типы данных и операции</h3>
+    <ol class="txt atributi">
+        <li class="txb">1.Primitive типы:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>Типы данных, такие как <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">boolean</b>, <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">number</b>, <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">string</b>, <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">null</b> и undefined.</li>
+    </ul>
+    <ol class="tx atributi">
+        <li class="txb">2.Object-types:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>Объекты и массивы, которые могут содержать другие объекты или примитивные типы.</li>
+    </ul>
+    <ol class="tx atributi">
+        <li class="txb">3.Операции:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>Операции <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">+</b>, <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">-</b>, <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">*</b> и <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">/</b> для чисел и строк.</li>
+        <li>Условные (<b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">if</b>), циклические (<b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">for</b>, <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">while</b>) и логические (<b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">&&</b>, <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">||</b>) операции.</li>
+    </ul>
+    <h3 class="span" id="object">Объекты и прототипы</h3>
+    <ol class="txt atributi">
+        <li class="txb">1.Объекты:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>Используются для группировки данных и методов. Создаются с помощью литералов (<b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;"> {} </b>) или вызова конструкторов.</li>
+    </ul>
+    <ol class="tx atributi">
+        <li class="txb">2.Прототипы:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>Каждый объект имеет свой прототип, который определяет его свойства и методы. Прототипы создаются с помощью оператора <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">Object.prototype</b>.</li>
+    </ul>
+    <ol class="tx atributi">
+        <li class="txb">3.getters и setters:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>Методы для управления доступом к свойствам объектов.</li>
+    </ul>
+    <h3 class="span">Функции и замыкания</h3>
+    <ol class="txt atributi">
+        <li class="txb">1.Функции:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>Создаются с помощью ключевого слова function или стрелки ( <b style="font-weight: 500; background-color: #E5E5E5; border-radius: 3px;">=></b>).</li>
+    </ul>
+    <ol class="tx atributi">
+        <li class="txb">2.Замыкания:</li>
+    </ol>
+    <ul class="tx" style="margin-left: 150px;">
+        <li>Функции, которые захватывают контекст внешней области видимости.</li>
+    </ul>
+    <h3 class="span" id="code">Пример кода</h3>
+    <div class="Language gu">
+        <div id="text-to-copy">
+            <p class="text-to-copy" style="color: #3F6781">// Простой пример функции</p>
+                   <p class="text-to-copy"><b style="color: #3775FB; font-weight: 100;">fanction</b> <b style="color: #FF5454; font-weight: 100;">greet</b> (name) <span> {</span></p>
+                    <p class="text-to-copy to"><b style="color: #3775FB; font-weight: 100;">return</b> <b style="color: #11CE00; font-weight: 100;">'Hello, '</b><b style="font-weight: 100; color: #8D953F;"> + </b>name<b style="font-weight: 100; color: #8D953F;"> + </b><b style="color: #11CE00; font-weight: 100;">'!'</b>;</p>
+                    <p class="text-to-copy"><span>}</span></p>
+                    <p class="text-to-copy" style="color: #3F6781;">// Вызов функции</p>
+                    <p class="text-to-copy">console.<b style="color: #FF5454; font-weight: 100;">log</b><span>(</span><b style="color: #FF5454; font-weight: 100;">greet</b><span>(</span><b style="color: #11CE00; font-weight: 100;">'World'</b><span>))</span>;<b style="color: #3F6781; font-weight: 100;"> // Hello, World!</b></p>
+                    <p class="text-to-copy" style="color: #3F6781">// Пример работы с объектами</p>
+                    <p class="text-to-copy"><b style="color: #3775FB; font-weight: 100;">const</b> person = <span>{</span></p>
+                    <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">name</b>:<b style="color: #11CE00; font-weight: 100;">'John'</b>;</p>
+                    <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">age</b>: <b style="color: #9C385B; font-weight: 100;">30</b>,</p>
+                    <p class="text-to-copy to"><b style="color: #FF5454; font-weight: 100;">sayHi</b>: <b style="color: #3775FB; font-weight: 100;">function</b>() <span>{</span></p>
+                    <p class="text-to-copy too">console.<b style="color: #FF5454; font-weight: 100;">log</b><span>(</span><b style="color: #11CE00; font-weight: 100;">`Hello from</b><b style="color: #3F6781; font-weight: 100;">$</b><span>{</span><b style="color: #3775FB; font-weight: 100;">this</b>.name<span>}</span> ')</p>
+                    <p class="text-to-copy to"><span>}</span></p>
+                    <p class="text-to-copy"><span>}</span>;</p><p class="text-to-copy">person.<b style="color: #FF5454; font-weight: 100;">sayHi</b><span>()</span>;<b style="color: #3F6781; font-weight: 100;"> // Hello from John</b></p>
+    </div>
+    </div>
+    <h3 class="span" id="video">Видео</h3>
+    <iframe width="480" height="270" src="https://dzen.ru/embed/vA15diURWg2o?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" data-testid="embed-iframe" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <div>
+        <p class="sans-serif" >3/3</p>
+       <a href="end.html"><button class="forth-button" style="width: 300px; margin-left: 1500px;">Перейти к практике</button></a>
+       </div>
+    </section>
+    <footer class="footer">
+        <div class="blo">
+        <img class="im" src="img/ПроСтарт.png" alt="#">
+       <p class="pop">&copy; Информация о владельце авторских прав на контент сайта</p>
+       <a href="https://www.figma.com/design/ZmVCv0QR6Z2ymGKCv3xwvW/Записть-на-курсы_Дубынин-Гордей_П-25?node-id=1-3&t=y2VPGVhPqnR3jvyR-0" class="close">Политика конфиденциальности</a>
+       <h2 class="figma">Социальные сети</h2>
+       <a href="#"><img class="telegram" src="img/telegram.png" alt="#"></a>
+       <a href="#"><img class="wk" src="img/vk.png" alt="#"></a>
+       <h2 class="head">Контактная информация</h2>
+       <p class="padding">dubynin@gmail.com</p>
+       <h3 class="charset">ТЕЛЕФОН</h3>
+       <p class="script">+7 955 228-89-04</p>
+        </div>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>

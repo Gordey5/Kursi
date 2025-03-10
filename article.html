@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="img" src="img/ПроСтарт.png" alt="">
+        <div>
+        <a href="#" class="shrink-link">Главная</a>
+        <a href="#part2" class="shrink-link">Каталог курсов</a>
+        <a href="#part1" class="shrink-link">Карта сайта</a>
+        </div>
+        <button id="userNameDisplay" onclick="showList()" style="position: fixed; top: 20px; right: 30px; color: white; background-color: #001aff; padding: 10px; border-radius: 5px; display: none;"><img src="img/copy.png" alt=""></button>
+        
+    </header>
+    <section class="section">
+        <div class="container">
+            <button class="phone-number-button">Привязать номер телефона</button>
+            <h2 class="hhh">Добро пожаловать в мир новых возможностей!</h2>
+            <p class="ppp">Откройте для себя лучшие онлайн-курсы и начните свой путь к успеху уже сегодня.</p>
+            <button class="another-button">Записаться на курс</button>
+            <div id="anotherModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form action="#" method="post" id="form">
+                        <label class="label la">Запись на курс</label>
+                        <h3 class="ghg gh">ФИО</h3>
+                        <div class="dsd">
+                        <input class="cs" placeholder="Укажите ваше полное имя" type="text" id="nameInput" name="nameInput" required>
+                    </div>
+                    <h3 class="ghg">Контактный телефон</h3>
+                        <div class="dsd">
+                        <input class="cs" placeholder="Номер телефона для связи" type="text" id="nameInput3" name="nameInput" required>
+                    </div>
+                    <h3 class="ghg">Электронная почта</h3>
+                        <div class="dsd ds">
+                        <input class="cs csd" placeholder="Ваш email для получения информации о курсе" type="text" id="nameInput4" name="nameInput" required>
+                    </div>
+                    <h3 class="ghg gh">Пороль</h3>
+                        <div class="dsd ds">
+                        <input class="cs css" placeholder="Введите пороль" type="text" id="nameInput2" name="nameInput5" required>
+                    </div>
+                    <div class="dev">
+                    <input class="type" type="checkbox" id="checkbox" name="option" value="yes">
+                    <a class="aaa" href="#">Поставьте галочку, чтобы подтвердить согласие на обработку ваших данных согласно политике конфиденциальности.</a>
+                    </div>
+                        <button class="submit" type="submit">Записатся на курс</button>
+                    </form>
+                </div>
+            </div>
+            <button class="third-button">Войти</button>
+        </div>
+            <div id="thirdModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form action="#" method="post" id="phoneForm2">
+                        <label class="label" for="phoneNumber">Вход</label>
+                        <div class="dsd ds fa">
+                            <input class="cs csd" placeholder="email" type="text" id="nameInput6" name="nameInput" required>
+                        </div>
+                        <div class="dsd ds fa">
+                            <input class="cs css" placeholder="password" type="text" id="nameInput7" name="nameInput" required>
+                        </div>
+                        <button type="submit">Войти</button>
+                    </form>
+                </div>
+        </div>
+        <div class="modal" id="phoneModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 class="oho">Введите Ваш номер телефона</h1>
+                <form action="#" method="post" id="phoneForm">
+                    <label class="label" for="phoneNumber">Номер телефона:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+7" required>
+                    <button type="submit"><strong>Подтвердить</strong></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="sect">
+        <div class="block" id="part1">
+            <img class="image" src="img/Line.png" alt="#">
+            <h2 class="lase"><strong>Карта сайта</strong></h2>
+            <ul class="ul">
+                <li style="border-radius: 30px;" id="part2">Категории курсов</li>
+                    <li class="li">Основы программирования</li>
+                        <li class="ol">HTML</li>
+                        <li class="ol">JavaScript</li>
+                        <li class="ol">CSS</li>
+                <li>Публикация на гитхаб</li>
+            </ul>
+                    <div class="fs">
+                        <img src="img/github.png" alt="#">
+                         <a class="href" href="https://github.com/"> GitHub</a>
+                    </div>
+            <img class="image" src="img/Line.png" alt="#">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="blo">
+        <img class="im" src="img/ПроСтарт.png" alt="#">
+       <p class="pop">&copy; Информация о владельце авторских прав на контент сайта</p>
+       <a href="https://www.figma.com/design/ZmVCv0QR6Z2ymGKCv3xwvW/Записть-на-курсы_Дубынин-Гордей_П-25?node-id=1-3&t=y2VPGVhPqnR3jvyR-0" class="close">Политика конфиденциальности</a>
+       <h2 class="figma">Социальные сети</h2>
+       <a href="#"><img class="telegram" src="img/telegram.png" alt="#"></a>
+       <a href="#"><img class="wk" src="img/vk.png" alt="#"></a>
+       <h2 class="head">Контактная информация</h2>
+       <p class="padding">dubynin@gmail.com</p>
+       <h3 class="charset">ТЕЛЕФОН</h3>
+       <p class="script">+7 955 228-89-04</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

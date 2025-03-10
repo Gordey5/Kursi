@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Курсы</title>
+</head>
+<body>
+    <header>
+        <img class="img" src="img/ПроСтарт.png" alt="">
+        <div>
+        <a href="article.html" class="shrink-link">Главная</a>
+        <a href="article.html#part2" class="shrink-link">Каталог курсов</a>
+        <a href="article.html#part1" class="shrink-link">Карта сайта</a>
+        </div>
+        <button class="showList" id="userNameDisplay" onclick="showList()" style="position: absolute; top: 20px; right: 30px; color: white; background-color: #001aff; padding: 10px; border-radius: 5px; display: none;">Имя: <span id="displayedName"></span></button>
+    </header>
+    <section class="section">
+        <div class="sect">
+            <a class="content" href="article.html">Главная</a>
+            <img class="alt" src="img/double.png" alt="#">
+            <p class="position">Основы программирования</p>
+        </div>
+        <div class="checkbox">
+            <h2 class="design">HTML</h2>
+            <p class="text">HTML (HyperText Markup Language) – это язык разметки гипертекста, который используется для создания структуры веб-страниц. Он является основой большинства сайтов в интернете и предоставляет возможность структурирования контента через использование тегов. HTML позволяет создавать заголовки, абзацы, списки, таблицы, формы и другие элементы, а также вставлять мультимедийные объекты, такие как изображения и видео.</p>
+            <h2 class="https">Основные компоненты HTML</h2>
+            <h3 class="span" id="structura">Структура документа</h3>
+            <p class="text">Каждый HTML-документ имеет определенную структуру, которая включает обязательные элементы:</p>
+            <div class="dew">
+                <h2 class="style" style="font-size: 25px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 100;">Навигация по курсу</h2>
+                <a class="aa" href="#tegi">Теги</a>
+                <a class="aa" href="#atributi">Атрибуты</a>
+                <a class="aa" href="#structura">Структура документа</a>
+                <a class="aa" href="#hhh">Заголовки</a>
+                <a class="aa" href="#ppp">Параграфы</a>
+                <a class="aa" href="#ul">Списки</a>
+                <a class="aa" href="#img">Изображения</a>
+                <a class="aa" href="#aaa">Ссылки</a>
+                <a class="aa" href="#video">Видео</a>
+            </div>
+            <div class="Language">
+                <div id="text-to-copy">
+                    <p class="text-to-copy" style="color: #636363;">&lt;!DOCTYPE html&gt;</p>
+                    <p class="text-to-copy" style="color: #9C385B;">&lt;html<b style="color: #11CE00;">   lang</b>="<b style="color: #3775FB;">ru</b>"&gt;</p>
+                    <p class="text-to-copy" style="color: #9C385B;">&lt;head&gt;</p>
+                    <p class="text-to-copy to" style="color: #9C385B;">&lt;meta<b style="color: #11CE00;">   charset</b>="<b style="color: #3775FB;">UTF-8</b>"&gt;</p>
+                    <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;title&gt;</b>Название страницы<b style="color: #9C385B; font-weight: 100;">&lt;/title&gt;</b></p>
+                    <p class="text-to-copy" style="color: #9C385B;">&lt;/head&gt;</p>
+                    <p class="text-to-copy" style="color: #9C385B;">&lt;body&gt;</p>
+                    <p class="text-to-copy to">Содержимое страницы</p>
+                    <p class="text-to-copy" style="color: #9C385B;">&lt;/body&gt;</p>
+                    <p class="text-to-copy" style="color: #9C385B;">&lt;/html&gt;</p>
+                 </div>
+                <a href="#" id="copy-link" class="copy-icon"><img src="img/copy.png" alt="Скопировать"></a>
+                <div id="overlay"></div>
+                <div id="notification" class="notification">Скопировано!</div>
+            </div>
+        </div>
+        <ul class="jpg">
+            <li class="txt"><b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px"> &lt;!DOCTYPE html&gt;</b> – объявляет версию HTML, используемую в документе.</li>
+            <li class="tx"><b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px"> &lt;html&gt;</b>  – корневой элемент всего документа.</li>
+            <li class="tx"><b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px"> &lt;head&gt;</b>  – содержит метаданные страницы, такие как заголовок, кодировка символов и информация для поисковых систем.</li>
+            <li class="tx"><b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px"> &lt;title&gt;</b>  – определяет название страницы, которое отображается в браузере.</li>
+            <li class="tx"><b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px"> &lt;body&gt;</b>  – содержит основное содержание страницы, видимое пользователям.</li>
+        </ul>
+        <div id="tegi">
+        <h3 class="span">Теги</h3>
+        <p class="text">Тег – это основной строительный блок HTML-документа. Каждый тег состоит из имени, заключенного в угловые скобки <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px">&lt; &gt;</b> . Например:</p>
+        <div class="Language ge">
+         <div id="text-to-copy">
+                    <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;p&gt;</b>Это параграф<b style="color: #9C385B; font-weight: 100;">&lt;/p&gt;</b></p>
+         </div>
+        <a href="#" id="copy-link" class="copy-icon ic"><img src="img/copy.png" alt="Скопировать"></a>
+        <div id="overlay"></div>
+        <div id="notification" class="notification">Скопировано!</div>
+        </div>
+        <p class="txt">В этом примере <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> p</b> – это имя тега, который обозначает параграф текста. Большинство тегов имеют открывающий <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> (&lt;p&gt;)</b> и закрывающий <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> (&lt;/p&gt;)</b> варианты, между которыми размещается содержимое элемента.</p>
+        <p class="tx">Некоторые теги являются одиночными и не требуют закрывающего тега, например:</p>
+        <div class="Language ge">
+            <div id="text-to-copy">
+                       <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;br&gt;</b><b style="color: #636363; font-weight: 100;"> &lt;!-- Перенесение строки --&gt;</b></p>
+            </div>
+           <a href="#" id="copy-link" class="copy-icon ic"><img src="img/copy.png" alt="Скопировать"></a>
+           <div id="overlay"></div>
+           <div id="notification" class="notification">Скопировано!</div>
+           </div>
+        </div>
+           <h3 class="span" id="atributi">Атрибуты</h3>
+           <p class="text">Атрибуты предоставляют дополнительную информацию о теге. Они добавляются внутри открывающего тега после имени тега и состоят из пары «имя-значение». Значение атрибута всегда заключается в кавычки. Например:</p>
+           <div class="Language ge">
+            <div id="text-to-copy">
+                       <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;a</b><b style="color: #11CE00; font-weight: 100;"> href</b><b style="color: #3775FB; font-weight: 100;"> https://example.com&gt;</b>Ссылка на сайт<b style="color: #9C385B; font-weight: 100;">&lt;/a&gt;</b></p>
+            </div>
+           <a href="#" id="copy-link" class="copy-icon ic"><img src="img/copy.png" alt="Скопировать"></a>
+           <div id="overlay"></div>
+           <div id="notification" class="notification">Скопировано!</div>
+           </div>
+        <p class="txt">Здесь <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> href</b> – это атрибут, который указывает URL-адрес ссылки.</p>
+        <h2 class="https">Примеры основных элементов</h2>
+        <h3 class="span" id="hhh">Заголовки</h3>
+        <p class="text">Заголовки создаются с помощью тегов от <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> h1</b> до <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> h6</b>, где <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> h1</b> – самый важный заголовок, а <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> h6</b> – наименее значимый.</p>
+        <div class="Language gee">
+            <div id="text-to-copy">
+                       <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;h1&gt;</b>Главный заголовок<b style="color: #9C385B; font-weight: 100;">&lt;/h1&gt;</b></p>
+                       <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;h2&gt;</b>Подзаголовок<b style="color: #9C385B; font-weight: 100;">&lt;/h2&gt;</b></p>
+                       <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;h3&gt;</b>Ещё менее важный заголовок<b style="color: #9C385B; font-weight: 100;">&lt;/h3&gt;</b></p>
+            </div>
+           <a href="#" id="copy-link" class="copy-icon is"><img src="img/copy.png" alt="Скопировать"></a>
+           <div id="overlay"></div>
+           <div id="notification" class="notification">Скопировано!</div>
+           </div>
+           <h3 class="span" id="ppp">Параграфы</h3>
+           <p class="text">Параграфы создаются с использованием тега <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> p</b> .</p>
+           <div class="Language ge">
+            <div id="text-to-copy">
+                       <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;p&gt;</b>Это параграф<b style="color: #9C385B; font-weight: 100;">&lt;/p&gt;</b></p>
+            </div>
+           <a href="#" id="copy-link" class="copy-icon ic"><img src="img/copy.png" alt="Скопировать"></a>
+           <div id="overlay"></div>
+           <div id="notification" class="notification">Скопировано!</div>
+           </div>
+           <h3 class="span" id="ul">Списки</h3>
+           <p class="text">Списки могут быть нумерованными (<b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> ol</b>) и ненумерованными (<b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> ul</b>). Элементы списка создаются с помощью тега <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> li</b>.</p>
+           <div class="Language ua">
+            <div id="text-to-copy">
+                <p class="text-to-copy" style="color: #9C385B;">&lt;ul&gt;</p>
+                <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;li&gt;</b>Первый пункт<b style="color: #9C385B; font-weight: 100;">&lt;/li&gt;</b></p>
+                <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;li&gt;</b>Второй пункт<b style="color: #9C385B; font-weight: 100;">&lt;/li&gt;</b></p>
+                <p class="text-to-copy" style="color: #9C385B;">&lt;/ul&gt;</p>
+                <p class="text-to-copy" style="color: #9C385B;">&lt;ol&gt;</p>
+                <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;li&gt;</b>Первый шаг<b style="color: #9C385B; font-weight: 100;">&lt;/li&gt;</b></p>
+                <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;li&gt;</b>Второй шаг<b style="color: #9C385B; font-weight: 100;">&lt;/li&gt;</b></p>
+                <p class="text-to-copy" style="color: #9C385B;">&lt;/ol&gt;</p>
+             </div>
+            <a href="#" id="copy-link" class="copy-icon my"><img src="img/copy.png" alt="Скопировать"></a>
+            <div id="overlay"></div>
+            <div id="notification" class="notification">Скопировано!</div>
+        </div>
+        <h3 class="span" id="img">Изображения</h3>
+        <p class="text">Для вставки изображений используется тег <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> img</b> с атрибутом <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> src</b>, указывающим путь к изображению.</p>
+        <div class="Language ge">
+            <div id="text-to-copy">
+                       <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;img</b><b style="color: #11CE00; font-weight: 100;"> src</b>="<b style="color: #3775FB; font-weight: 100;"> image.jpg&gt;</b>"<b style="color: #11CE00; font-weight: 100;"> alt</b>="<b style="color: #3775FB; font-weight: 100;"> Описание изображения&gt;</b></p>
+            </div>
+           <a href="#" id="copy-link" class="copy-icon ic"><img src="img/copy.png" alt="Скопировать"></a>
+           <div id="overlay"></div>
+           <div id="notification" class="notification">Скопировано!</div>
+           </div>
+        <h3 class="span" id="aaa">Ссылки</h3>
+        <p class="text">Гиперссылки создаются с помощью тега <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> a</b> и атрибута <b style="font-weight: 500; background-color: #e5e5e5; border-radius: 3px;"> href</b>, который указывает адрес ссылки.</p>
+        <div class="Language ge">
+            <div id="text-to-copy">
+                       <p class="text-to-copy to"><b style="color: #9C385B; font-weight: 100;">&lt;a</b><b style="color: #11CE00; font-weight: 100;"> href</b>="<b style="color: #3775FB; font-weight: 100;"> https://example.com</b>"&gt;Перейти на сайт&lt;<b style="color: #9C385B; font-weight: 100;">/a</b>&gt;</p>
+            </div>
+           <a href="#" id="copy-link" class="copy-icon ic"><img src="img/copy.png" alt="Скопировать"></a>
+           <div id="overlay"></div>
+           <div id="notification" class="notification">Скопировано!</div>
+           </div>
+           <h3 class="span" id="video">Видео</h3>
+           <iframe width="480" height="270" src="https://dzen.ru/embed/vBis-MN01in4?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" data-testid="embed-iframe" frameborder="0" scrolling="no" allowfullscreen></iframe>
+           <div>
+            <p class="sans-serif">1/3</p>
+           <a href="css.html"><button class="forth-button">Дальше</button></a>
+           </div>
+    </section>
+    <footer class="footer">
+        <div class="blo">
+        <img class="im" src="img/ПроСтарт.png" alt="#">
+       <p class="pop">&copy; Информация о владельце авторских прав на контент сайта</p>
+       <a href="https://www.figma.com/design/ZmVCv0QR6Z2ymGKCv3xwvW/Записть-на-курсы_Дубынин-Гордей_П-25?node-id=1-3&t=y2VPGVhPqnR3jvyR-0" class="close">Политика конфиденциальности</a>
+       <h1 class="figma">Социальные сети</h1>
+       <a href="#"><img class="telegram" src="img/telegram.png" alt="#"></a>
+       <a href="#"><img class="wk" src="img/vk.png" alt="#"></a>
+       <h2 class="head">Контактная информация</h2>
+       <p class="padding">dubynin@gmail.com</p>
+       <h3 class="charset">ТЕЛЕФОН</h3>
+       <p class="script">+7 955 228-89-04</p>
+        </div>
+    </footer>
+    <script src="js.js"></script>
+    
+</body>
+</html>
